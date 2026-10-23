@@ -69,3 +69,9 @@ When deliberately taking a shortcut, mark it so the next reader knows it is inte
 ```
 
 Never use `ponytail:` or any agent-signature marker in shipped code, and write all comments as a human engineer would (no AI-tell phrasing). The marker convention applies only to internal/scratch work that never leaves the machine.
+
+## Attribution
+
+Adapted from [`DietrichGebert/ponytail`](https://github.com/DietrichGebert/ponytail) (MIT), canonical file `skills/ponytail/SKILL.md`. This copy was forked at revision `b6c04480c03e8db2f035751d7c46289779ec3362` (2026-07-10, "fix: narrow the ponytail: marker to real corner-cuts, keep the prefix (#120) (#577)"), the revision current when the fork was made; upstream has since rebuilt the file (HEAD `09c434ab73ca43761c5d8b0c5d341926c2fba710`), so read that instead if you want the maintained original. The ladder, the YAGNI framing, the output pattern, and the safety carve-outs are his.
+
+Local deviations: Hermes frontmatter and the Paul-specific invocation line, the `Tool discipline under Ponytail` section, and `references/stateful-preflight-audits.md`. Roughly 9% of the wording still matches upstream; the rest was rewritten for this harness. This adapted copy is published at [`pdscomp/Ponytail`](https://github.com/pdscomp/Ponytail) with that attribution and the pinned revision.
